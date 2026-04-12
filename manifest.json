@@ -1,0 +1,16 @@
+{
+  "name": "Manual Lysis Protocol",
+  "short_name": "Manual Lysis",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a5fa8",
+  "description": "Manual Lysis Protocol - Tel Aviv Medical Center",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png"
+    }
+  ]
+}
