@@ -1,0 +1,16 @@
+{
+  "name": "Meds/ManualLysis App",
+  "short_name": "Meds/ManualLysis",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a5fa8",
+  "description": "Meds and Manual Lysis Protocol Tools",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png"
+    }
+  ]
+}
