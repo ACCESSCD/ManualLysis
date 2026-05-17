@@ -1,11 +1,11 @@
 {
-  "name": "Manual Lysis Protocol",
-  "short_name": "Manual Lysis",
-  "start_url": "./index.html",
+  "name": "Meds/ManualLysis App",
+  "short_name": "Meds/ManualLysis",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#1a5fa8",
-  "description": "Manual Lysis Protocol - Tel Aviv Medical Center",
+  "description": "Meds and Manual Lysis Protocol Tools",
   "icons": [
     {
       "src": "icon.png",
