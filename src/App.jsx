@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   const [currentView, setCurrentView] = useState('manualLysis');
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   const handleNavClick = (view) => {
     setCurrentView(view);
