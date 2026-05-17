@@ -295,8 +295,8 @@ const ManualLysisView = () => {
     if (pdfjsLib) {
       pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
-      // NOTE: For local Vite dev, we fetch from public folder. Assuming manual.pdf is in public/
-      const url = '/manual.pdf';
+      // NOTE: For local Vite dev and GitHub Pages, we fetch using BASE_URL
+      const url = import.meta.env.BASE_URL + 'manual.pdf';
       const container = document.getElementById('pdf-container');
 
       if(container) {

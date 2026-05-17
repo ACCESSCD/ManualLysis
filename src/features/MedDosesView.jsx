@@ -15,7 +15,7 @@ const MedDosesView = () => {
           boxSizing: 'border-box'
         }}>
           <img 
-            src="/Doses.jpeg" 
+            src={`${import.meta.env.BASE_URL}Doses.jpeg`}
             alt="MedDoses Reference Chart" 
             style={{ 
               width: '100%', 
