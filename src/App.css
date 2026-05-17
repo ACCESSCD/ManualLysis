@@ -18,7 +18,16 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: 2px 0 5px rgba(0,0,0,0.5);
-  z-index: 1000;
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -250px;
+  transition: left 0.3s ease;
+}
+
+.sidebar.open {
+  left: 0;
 }
 
 .sidebar-header {
@@ -26,12 +35,29 @@ body {
   background-color: #23272a;
   text-align: center;
   border-bottom: 1px solid #444;
+  position: relative;
 }
 
 .sidebar-header h2 {
   margin: 0;
   font-size: 1.5rem;
   color: #7289da;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+
+.close-btn:hover {
+  color: #fff;
 }
 
 .nav-list {
@@ -67,4 +93,46 @@ body {
   position: relative;
   overflow-y: auto;
   background-color: #525659;
+  width: 100%;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1001;
+  background-color: rgba(44, 47, 51, 0.9);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  backdrop-filter: blur(5px);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.menu-toggle:hover {
+  background-color: #40444b;
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 1500;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.open {
+  opacity: 1;
+  pointer-events: auto;
 }
