@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ManualLysisView from './features/ManualLysisView';
 import MedDosesView from './features/MedDosesView';
 import UDPView from './features/UDPView';
+import CarbetocinView from './features/CarbetocinView';
 import './App.css';
 
 function App() {
@@ -45,12 +46,19 @@ function App() {
           >
             UDP
           </li>
+          <li 
+            className={currentView === 'carbetocin' ? 'active' : ''} 
+            onClick={() => handleNavClick('carbetocin')}
+          >
+            קרבטוצין
+          </li>
         </ul>
       </nav>
       <main className="main-content">
         {currentView === 'manualLysis' && <ManualLysisView />}
         {currentView === 'medDoses' && <MedDosesView />}
         {currentView === 'udp' && <UDPView />}
+        {currentView === 'carbetocin' && <CarbetocinView />}
       </main>
     </div>
   );
